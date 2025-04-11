@@ -9,6 +9,7 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
+  var activeScreen = StartScreen();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,7 +22,7 @@ class _QuizState extends State<Quiz> {
               end: Alignment.bottomRight,
             ),
           ),
-          child: StartScreen(),
+          child: activeScreen,
         ),
       ),
     );
