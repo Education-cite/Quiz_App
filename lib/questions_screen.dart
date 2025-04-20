@@ -43,7 +43,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                 buttonText: answer,
                 onTap: () {
                   answerQuestion(answer);
-                  print(answer);
+                  // print(answer);
                 },
               );
             }),
