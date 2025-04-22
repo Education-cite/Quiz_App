@@ -8,14 +8,13 @@ class ResultsScreen extends StatelessWidget {
     final List<Map<String, Object>> summary = [];
     for (var i = 0; i < chosenAnswers.length; i++) {
       summary.add({
-        "question_index":i,
-        'question':questions[i].questionText,
-        'correct_answer':questions[i].answers[0],
-        'user_answer':
+        "question_index": i,
+        'question': questions[i].questionText,
+        'correct_answer': questions[i].answers[0],
+        'user_answer': chosenAnswers[i],
       });
     }
-        return summary;
-
+    return summary;
   }
 
   @override
